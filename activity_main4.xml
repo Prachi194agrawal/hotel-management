@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity4">
+
+    <EditText
+        android:id="@+id/guestNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/guestAadharEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestNameEditText"
+        android:hint="Employee ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/roomIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestAadharEditText"
+        android:hint="Employee Type (1-5)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addEmployeeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomIdEditText"
+        android:text="Add Employee" />
+
+</RelativeLayout>

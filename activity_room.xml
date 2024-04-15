@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Room_Activity">
+
+    <Button
+        android:id="@+id/addRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Room" />
+
+    <Button
+        android:id="@+id/editRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addRoomBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="16dp"
+        android:text="Edit Room" />
+
+    <Button
+        android:id="@+id/deleteRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="73dp"
+        android:text="Delete Room" />
+
+</RelativeLayout>

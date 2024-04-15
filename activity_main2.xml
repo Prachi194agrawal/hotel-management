@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/displayRoomsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputRoomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayRoomsTextView"
+        android:hint="Enter Room Number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/showRoomsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputRoomNumber"
+        android:layout_centerHorizontal="true"
+        android:text="Show Rooms" />
+
+    <ListView
+        android:id="@+id/availableRoomsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showRoomsButton"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/addRoomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availableRoomsListView"
+        android:layout_centerHorizontal="true"
+        android:text="Add Room" />
+
+</RelativeLayout>

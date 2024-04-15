@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Guest Information Section -->
+    <EditText
+        android:id="@+id/guestNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guest Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/guestAadharEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestNameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Guest Aadhar Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/guestPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestAadharEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Guest Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/roomIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestPhoneEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Room ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/numDaysEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomIdEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Number of Days"
+        android:inputType="number" />
+
+    <!-- Action Buttons Section -->
+    <Button
+        android:id="@+id/checkoutRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numDaysEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Checkout Room" />
+
+    <Button
+        android:id="@+id/displayPreviousEmployeesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkoutRoomBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Display Previous Employees" />
+
+    <Button
+        android:id="@+id/displayRoomsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayPreviousEmployeesBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Display Available Rooms" />
+
+    <Button
+        android:id="@+id/bookRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayRoomsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Book Room" />
+
+    <Button
+        android:id="@+id/addRoomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookRoomBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Room" />
+
+    <Button
+        android:id="@+id/addEmployeeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addRoomButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Employee" />
+
+    <!-- RecyclerView for Previous Employees -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previousEmployeesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addEmployeeBtn"
+        android:layout_marginTop="24dp" />
+
+    <!-- RecyclerView for Available Rooms -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/availableRoomsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previousEmployeesRecyclerView"
+        android:layout_marginTop="24dp" />
+
+    <!-- Hotel Management Button -->
+    <Button
+        android:id="@+id/hotelmanagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availableRoomsRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hotel Management" />
+
+</RelativeLayout>
